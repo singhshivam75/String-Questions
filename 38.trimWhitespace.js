@@ -22,7 +22,7 @@ function trimWhitespace(str) {
   //    end--;
 
   let result = '';
-  console.log(`Start index: ${start}, End index: ${end}`);
+  // console.log(`Start index: ${start}, End index: ${end}`);
 
 
   for (let i = start; i <= end; i++)
