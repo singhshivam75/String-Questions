@@ -9,7 +9,7 @@
 //       star += "*";
 //       console.log(star, 'star after adding star');
 //     }
-//       console.log(star);
+//       console.log(star);  
 //   }
 // }
 // rightAngledTriangle(5);

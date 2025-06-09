@@ -11,3 +11,7 @@ function copyString(str) {
   
 }
 copyString("Hello, World!");
+
+const string = "jiohc chane"
+
+const string3 = string;

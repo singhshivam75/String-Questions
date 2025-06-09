@@ -2,19 +2,26 @@
 
 function checkIsPalindrome(str) {
   let reversedString = "";
-  let originalString = "";
-  let isPalindrome = "";
+  // let isPalindrome = "";
+// single loop
+  // for (let i = 0; i < str.length; i++) {
+  //   originalString += str[i];
+  // }
 
-  for (let i = 0; i < str.length; i++) {
-    originalString += str[i];
-  }
+  // reversedString = originalString.length - 1;
+  // console.log(reversedString);
+  
+  // console.log(originalString);
+  
   for (let i = str.length - 1; i >= 0; i--) {
     reversedString += str[i];
   }
-  if (originalString === reversedString) {
-    console.log(`${originalString} is a palindrome.`);
+  console.log(reversedString);
+  
+  if (str === reversedString) {
+    console.log(`${str} is a palindrome.`);
   } else {
-    console.log(`${originalString} is not a palindrome.`);
+    console.log(`${str} is not a palindrome.`);
   }
 }
 checkIsPalindrome("madam");
