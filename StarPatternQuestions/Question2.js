@@ -6,8 +6,7 @@
     *
 */
 
-function starPatternTriangle() {
-  let n = 5;
+function starPatternTriangle(n) {
 
   for (let i = 1; i <= n; i++) {
     let row = '';
@@ -24,4 +23,4 @@ function starPatternTriangle() {
   }
 }
 
-starPatternTriangle();
+starPatternTriangle(5);

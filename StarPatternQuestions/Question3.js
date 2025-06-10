@@ -7,7 +7,9 @@
 123456
 */
 
-let n = 6;
+
+function starPatternTriangle(n) {
+  
 let star = '';
 
 for (let i = 0; i <= n; i++) {
@@ -23,4 +25,6 @@ for (let i = 0; i <= n; i++) {
   }
   console.log(star);
   
+}  
 }
+starPatternTriangle(6);

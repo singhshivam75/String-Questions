@@ -5,10 +5,9 @@
 *******
 */
 
-// let star = '';
-let n = 4;
 
-for (let i = 1; i <= n; i++) {
+function starPatternTriangle(n) {
+  for (let i = 1; i <= n; i++) {
   let star = '';
 //  console.log(star);
   for (let j = 1; j <= n - i; j++) {
@@ -21,24 +20,8 @@ for (let i = 1; i <= n; i++) {
     // console.log(k);
     // console.log(star);  
   }
-  // console.log(star);
+  console.log(star);
 }
-
-// let n = 4;
-
-// for (let i = 1; i <= n; i++) {
-//   let line = '';
-// // console.log(i);
-
-//   // Add spaces
-//   for (let s = 1; s <= n - i; s++) {
-//     line += ' ';
-//   }
-
-//   // Add stars
-//   for (let j = 1; j <= 2 * i - 1; j++) {
-//     line += '*';
-//   }
-
-//   console.log(line);
-// }
+  
+}
+starPatternTriangle(4);
