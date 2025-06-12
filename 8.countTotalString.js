@@ -1,42 +1,74 @@
 // Write a js program to find total number of alphabets, digits or special character in a string.
 
-
 function countTotalString(str) {
-  let totalAlphabets = "";
-  let totalDigits = "";
-  let totalSpecialCharacter = "";
-  let Others = "";
+  let totalAlphabets = 0;
+  let totalDigits = 0;
+  let totalSpecialCharacter = 0;
 
-  for (let i = 0; i < str.length; i++) {
-    let charCode = str.charCodeAt(i);
-    // console.log(charCode);
-
-    if (charCode >= 65 && charCode <= 90 || charCode >= 90 && charCode <= 122) {
+  for (let i = 0; str[i] !== undefined; i++) {
+    let totalStr = str[i];
+    
+    if (totalStr >= 'a' && totalStr <= 'z' || totalStr >= 'A' && totalStr <= 'Z') {
       totalAlphabets++;
       // console.log(totalAlphabets);
-      
-    } else if (charCode >= 48 && charCode <= 57) {
+    } else if (totalStr >= '0' && totalStr <= '9') {
       totalDigits++;
-
-    } else if (
-      charCode >= 32 && charCode <= 47 ||
-      charCode >= 58 && charCode <= 64 ||
-      charCode >= 91 && charCode <= 97 ||
-      charCode >= 123 && charCode <= 126
-    ) {
-      totalSpecialCharacter++;
+      // console.log(totalDigits);
     } else {
-      Others++;
+      totalSpecialCharacter++;
+      // console.log(totalSpecialCharacter);
     }
   }
-console.log(`Total Alphabets: ${totalAlphabets}
-Total Digits: ${totalDigits}
-Total Special Characters: ${totalSpecialCharacter}
-Others: ${Others}`);
+  console.log(`
+    Total Alphabets: ${totalAlphabets}
+    Total Numbers: ${totalDigits}
+    Total Special Character: ${totalSpecialCharacter}
+    `);
+  
 }
-
 let str = "Hello World! 12345 @#$%";
 countTotalString(str);
+
+
+
+
+
+// function countTotalString(str) {
+//   let totalAlphabets = "";
+//   let totalDigits = "";
+//   let totalSpecialCharacter = "";
+//   let Others = "";
+
+//   for (let i = 0; str[i] !== undefined; i++) {
+//     let charCode = str.charCodeAt(i);
+//     // console.log(charCode);
+
+//     if (charCode >= 65 && charCode <= 90 || charCode >= 90 && charCode <= 122) {
+//       totalAlphabets++;
+//       // console.log(totalAlphabets);
+      
+//     } else if (charCode >= 48 && charCode <= 57) {
+//       totalDigits++;
+
+//     } else if (
+//       charCode >= 32 && charCode <= 47 ||
+//       charCode >= 58 && charCode <= 64 ||
+//       charCode >= 91 && charCode <= 97 ||
+//       charCode >= 123 && charCode <= 126
+//     ) {
+//       totalSpecialCharacter++;
+//     } else {
+//       Others++;
+//     }
+//   }
+// console.log(`Total Alphabets: ${totalAlphabets}
+// Total Digits: ${totalDigits}
+// Total Special Characters: ${totalSpecialCharacter}
+// Others: ${Others}`);
+// }
+
+// let str = "Hello World! 12345 @#$%";
+// countTotalString(str);
 
 
 

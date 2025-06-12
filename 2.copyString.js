@@ -2,7 +2,7 @@
 
 function copyString(str) {
   let copidString = "";
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; str[i] != undefined; i++) {
     copidString += str[i];
     
   }
@@ -12,6 +12,4 @@ function copyString(str) {
 }
 copyString("Hello, World!");
 
-const string = "jiohc chane"
 
-const string3 = string;
