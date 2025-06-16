@@ -1,8 +1,10 @@
 /*
-   *
-  ***
- *****
-*******
+    *
+   ***
+  *****
+ *******
+*********
+
 */
 
 
@@ -24,4 +26,4 @@ function starPatternTriangle(n) {
 }
   
 }
-starPatternTriangle(4);
+starPatternTriangle(5);

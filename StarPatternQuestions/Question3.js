@@ -4,7 +4,6 @@
 123
 1234
 12345
-123456
 */
 
 
@@ -27,4 +26,4 @@ for (let i = 0; i <= n; i++) {
   
 }  
 }
-starPatternTriangle(6);
+starPatternTriangle(5);

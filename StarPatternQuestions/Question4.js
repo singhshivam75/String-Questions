@@ -1,4 +1,5 @@
           /*
+*****
 ****
 ***
 **
@@ -22,6 +23,6 @@ function starPatternTriangle(n) {
     console.log(row);
   }
 }
-starPatternTriangle(4)
+starPatternTriangle(5)
 
   

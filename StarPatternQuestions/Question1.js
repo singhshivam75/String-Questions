@@ -3,6 +3,7 @@
 **
 ***
 ****
+*****
 */
 
 function starPatternTriangle(n) {
@@ -15,4 +16,4 @@ function starPatternTriangle(n) {
     console.log(str);
   }
 }
-starPatternTriangle(4)
+starPatternTriangle(5)
