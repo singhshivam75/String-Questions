@@ -105,21 +105,21 @@ let arr = [
   [7, 8, 9],
   [10, 11, 12]
 ]
-console.log(arr, 'arrays to merge');
+// console.log(arr, 'arrays to merge');
 
 let mergedArray = [];
 let index = 0;  
 
 for (let i = 0; i < arr.length; i++) {
   let newArray = arr[i];
-  console.log(newArray, 'current array to merge');
+  // console.log(newArray, 'current array to merge');
   
   for (let j = 0; j < newArray.length; j++) {
     mergedArray[index] = newArray[j];
-    console.log(newArray[j], 'current element value');
-    console.log(index, 'current index value');
+    // console.log(newArray[j], 'current element value');
+    // console.log(index, 'current index value');
     index++;
-    console.log(mergedArray, 'merged array after adding element');
+    // console.log(mergedArray, 'merged array after adding element');
   }
 }
   console.log(mergedArray, 'merged array after processing current array');
