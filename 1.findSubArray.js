@@ -4,7 +4,7 @@ function findLength(str) {
   // console.log(str);
   let result = 0;
   
-  for (let i = 0; str[i] != undefined; i++) {
+  for (let i = 0; str[i]; i++) {
     result++;
   }
 

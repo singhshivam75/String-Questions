@@ -7,7 +7,7 @@ function countVowelsAndConsonants(str) {
 
   let vowels = "aeiouAEIOU";
 
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; str[i] !== undefined; i++) {
     let char = str[i];
     let charCode = char.charCodeAt(0);
 
@@ -28,7 +28,10 @@ function countVowelsAndConsonants(str) {
     }
 }
 }
-console.log(totalVowels, totalConsonants);
+console.log(`
+  Total Vowels: ${totalVowels}
+  Total Consonants: ${totalConsonants}
+  `);
 
 }
 

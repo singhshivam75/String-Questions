@@ -4,7 +4,7 @@
 function countTotalWords(str) {
   let totalWords = 0;
 
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; str[i] !== undefined; i++) {
     const element = str[i];
       if (element === (" ")) {
     totalWords++;
