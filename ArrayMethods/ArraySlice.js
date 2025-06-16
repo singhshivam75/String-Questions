@@ -4,6 +4,7 @@ function sliceTheArrayElement(arr, start, end) {
   let j = 0;
 
   while (i < end && arr[i] !== undefined) {
+    
     result[j] = arr[i];
     i++;
     j++;

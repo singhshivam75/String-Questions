@@ -1,17 +1,21 @@
 function customToSpliced(arr, start, deleteCount) {
 
   const result = [];
-  let i = 0, j = 0;
+  let i = 0;
+  let j = 0;
 
   while (i < start) {
-    result[j++] = arr[i++];
-    
+    result[j] = arr[i];
+    i++;
+    j++;
   }
 
   i += deleteCount;
 
   while (arr[i] !== undefined) {
-    result[j++] = arr[i++];
+    result[j] = arr[i];
+    i++;
+    j++;
   }
 
   return result;
