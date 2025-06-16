@@ -21,10 +21,13 @@ myUnshift(fruits, "Papaya");
 function addItemAtFirst(arr, newItem) {
   let i = 0;
   while (arr[i] !== undefined) i++;
+// console.log(arr);
 
   while (i > 0) {
     arr[i] = arr[i - 1];
     i--;
+    // console.log(arr);
+    
   }
 
   arr[0] = newItem;

@@ -17,6 +17,8 @@ function returnIndexedElement(fruits) {
   for (const fruit of fruits) {
     if (count === 2) {
       result = fruit;
+      // console.log(result);
+      
       break;
     }
     count++;
