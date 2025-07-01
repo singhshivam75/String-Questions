@@ -1,19 +1,15 @@
-function sliceTheArrayElement(arr, start, end) {
-  const result = [];
-  let i = start;
-  let j = 0;
-
-  while (i < end && arr[i] !== undefined) {
-    
-    result[j] = arr[i];
-    i++;
-    j++;
-  }
-
-  console.log(result);
+function arraySliceMethod(arr, start, end) {
   
+  let result = [];
+  for (let i = start;i < end && i < arr.length; i++) {
+    result[result.length] = arr[i];
+    
+  }
+  return result;
 }
 
+let numbers = [100, 200, 300, 400, 500];
 
-let array = [1, 2, 3, 4, 5];
-sliceTheArrayElement(array, 1, 3); // Output: [2, 3]
+console.log(arraySliceMethod(numbers, 1, 4)); // [200, 300, 400]
+console.log(arraySliceMethod(numbers, 0, 2)); // [100, 200]
+console.log(arraySliceMethod(numbers, 3, 10)); // [400, 500]

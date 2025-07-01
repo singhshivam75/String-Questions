@@ -10,20 +10,25 @@
 
 // or
 
-function returnIndexedElement(fruits) {
+// fix this using for loop
+function returnIndexedElement(fruits, index) {
   let result = '';
   let count = 0;
-
+  
   for (const fruit of fruits) {
-    if (count === 2) {
+    // console.log(fruit);
+    
+
+    if (count === index) {
       result = fruit;
-      // console.log(result);
       
       break;
     }
     count++;
+// console.log(count);
+
   }
-  console.log(result);
+  console.log(result,"shhaha====");
 }
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-returnIndexedElement(fruits);   // Output: "Apple"
+returnIndexedElement(fruits, 2);   // Output: "Apple"

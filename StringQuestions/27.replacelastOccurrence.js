@@ -7,11 +7,9 @@ function replaceLastOccurrence(str, charToReplace, replacementChar) {
 
   for (let i = str.length - 1; i >= 0; i--) {
     let char = str[i];
-    // console.log(char);
-    // console.log(result);
+
     if (char === charToReplace && !found) {
       result += replacementChar;
-      // console.log(result);
       found = true;
     } else {
       result += char;

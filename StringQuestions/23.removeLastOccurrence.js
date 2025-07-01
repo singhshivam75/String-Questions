@@ -7,7 +7,6 @@ function removeLastOccurrence(str, charToRemove) {
 
   for (let i = str.length - 1; i >= 0; i--) {
     const char = str[i];
-    // console.log(char);
     
     if (char === charToRemove && !found) {
       found = true;
@@ -16,11 +15,12 @@ function removeLastOccurrence(str, charToRemove) {
     }
   }
   
+  
   for (let j = newString.length - 1; j >= 0; j--) {
     result += newString[j];
   }
   console.log(result);
 }
 let str = "How's it going?";
-let charToRemove = 'o';
+let charToRemove = 'g';
 removeLastOccurrence(str, charToRemove);

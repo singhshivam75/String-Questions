@@ -1,28 +1,23 @@
-function removeLastElement(arr) {
+// pop() – Remove last item
 
-  arr.length = arr.length - 1;
+function arrayLength(arr) {
+  let count = 0;
+
+  for (const i of arr) {
+    count++;
+  }
+  return count;
+}
+
+function arrayPopMethod(arr) {
+  let length = arrayLength(arr);
+
+  for (let i = 0; i < length - 1; i++) {
+    // console.log(arr);
+    }
+  arr.length = length - 1; 
   console.log(arr);
-
 }
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-removeLastElement(fruits); // Output: ["Banana", "Orange", "Apple"]
-
-
-
-
-// or
-
-function myPop(array) {
-  if (array.length === 0) return undefined;
-
-  const last = array[array.length - 1];
-  array.length--; 
-  return last;
-}
-
-const newFruits = ["Banana", "Orange", "Apple", "Mango"];
-const removed = myPop(newFruits);
-
-console.log(removed);  // "Mango"
-console.log(fruits);   // ["Banana", "Orange", "Apple"]
+let numbers = [1, 2, 3, 4, 5];
+arrayPopMethod(numbers);

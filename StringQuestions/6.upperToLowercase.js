@@ -28,8 +28,11 @@ function upperToLowerCase(str) {
 
 }
 
-upperToLowerCase("HELLO sHIVAM");
+upperToLowerCase("HELLO sHIVAM!");
 
+
+
+//     *****************************     //
 
 // function upperToLowerCase(str) {
 //   let lowercaseString = "";

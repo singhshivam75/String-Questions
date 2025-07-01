@@ -6,19 +6,46 @@ function replaceFirstOccurrence(str, charToReplace, replacementChar) {
 
   for (let i = 0; i < str.length; i++) {
     let char = str[i];
-    // console.log(char);
-    // console.log(result);
+
     if (char === charToReplace && !found) {
       result += replacementChar;
-      console.log(result);
       found = true;
     } else {
       result += char;
     }
   }
-  console.log(result);
-}
+  console.log("Original String: " + str);
+  console.log("After Replacement: " + result);
+};
+
 let str = "How's it going?";
 let charToReplace = 'o';
 let replacementChar = 'a';
 replaceFirstOccurrence(str, charToReplace, replacementChar);
+
+
+
+//     *****************************     //
+
+// function replaceFirst(str, target, replacement) {
+//   let result = "";
+//   let i = 0;
+//   let replaced = false;
+
+//   while (str[i] !== undefined) {
+//     if (!replaced && str[i] === target) {
+//       result += replacement;
+//       replaced = true;
+//     } else {
+//       result += str[i];
+//     }
+//     i++;
+//   }
+
+//   console.log(result);
+// }
+
+// let str = "How's it going?";
+// let charToReplace = 'o';
+// let replacementChar = 'a';
+// replaceFirst(str, charToReplace, replacementChar);

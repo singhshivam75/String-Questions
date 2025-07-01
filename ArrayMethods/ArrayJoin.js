@@ -1,15 +1,18 @@
+function arrayJoinMethod(arr, separator) {
+  let result = "";
 
-function joinArrayElements(fruits, separator) {
-  let result = '';
-  for (const fruit of fruits) {
-    if (result) {
+  for (let i = 0; i < arr.length; i++) {
+    result += arr[i];
+    
+    if (i < arr.length - 1) {
       result += separator;
     }
-    result += fruit;
   }
-  console.log(result);
-
+  return result;
 }
 
-let fruits = ["Banana", "Orange", "Apple", "Mango"];
-joinArrayElements(fruits, " * "); // Output: "Banana * Orange * Apple * Mango"
+let words = ["Shivam", "is", "learning"];
+
+console.log(arrayJoinMethod(words, " "));   // "Shivam is learning"
+console.log(arrayJoinMethod(words, "-"));   // "Shivam-is-learning"
+console.log(arrayJoinMethod(words, ""));    // "Shivamislearning"

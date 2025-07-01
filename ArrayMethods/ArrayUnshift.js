@@ -1,39 +1,15 @@
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// unshift() — Add item at start
 
-function myUnshift(arr, newItem) {
-  arr[4] = arr[3];
-  arr[3] = arr[2];
-  arr[2] = arr[1];
-  arr[1] = arr[0];
-  arr[0] = newItem;
-}
+function arrayUnshiftMethod(arr, newNum) {
 
-myUnshift(fruits, "Papaya");
-
-// console.log(fruits); 
-// ["Papaya", "Banana", "Orange", "Apple", "Mango"]
-
-
-
-
-// or 
-
-function addItemAtFirst(arr, newItem) {
-  let i = 0;
-  while (arr[i] !== undefined) i++;
-// console.log(arr);
-
-  while (i > 0) {
+  for (let i = arr.length; i > 0; i--) {
     arr[i] = arr[i - 1];
-    i--;
-    // console.log(arr);
     
   }
+  arr[0] = newNum;
+  console.log(arr);
+};
 
-  arr[0] = newItem;
-  console.log(arr);  // Output: [ 'Papaya', 'Banana', 'Orange', 'Apple', 'Mango' ]
-  
-}
-
-let freshFruits = ["Banana", "Orange", "Apple", "Mango"];
-addItemAtFirst(freshFruits, "Papaya")
+let numbers = [1, 5, 3, 4, 1, 2, 3];
+let newNum = 9;
+arrayUnshiftMethod(numbers, newNum);  //   [9, 1, 5, 3, 4, 1, 2, 3]

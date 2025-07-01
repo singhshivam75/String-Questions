@@ -1,5 +1,3 @@
-
-
 function removeAt(arr, indexToRemove) {
   let i = indexToRemove;
 

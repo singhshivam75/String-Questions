@@ -1,20 +1,28 @@
-function myShift(arr) {
-  const first = arr[0];
+// shift() — Remove first item
 
-  for (let i = 0; i < arr.length - 1; i++) {
-    arr[i] = arr[i + 1];
+function arrayLength(arr) {
+  let count = 0;
+
+  for (const i of arr) {
+    count++;
   }
-
-  arr.length = arr.length - 1;
-
-  return first;
+  return count;
 }
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-const removed = myShift(fruits);
 
-console.log(removed); // "Banana"
-console.log(fruits);  // ["Orange", "Apple", "Mango"]
+function arrayShiftMethod(arr) {
+
+  let length = arrayLength(arr);
+
+  for (let i = 0; i < length; i++) {
+    arr[i] = arr[i + 1]
+  }
+  arr.length = length - 1;
+  console.log(arr);
+  
+}
+let numbers = [1, 5, 3, 4, 1, 2, 3];
+arrayShiftMethod(numbers);  // [5, 3, 4, 1, 2, 3]
 
 
 

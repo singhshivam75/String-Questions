@@ -5,11 +5,10 @@ function replaceAllOccurrence(str, charToReplace, replacementChar) {
 
   for (let i = 0; i < str.length; i++) {
     let char = str[i];
-    // console.log(char);
-    // console.log(result);
+
     if (char === charToReplace) {
       result += replacementChar;
-      // console.log(result);
+
     } else {
       result += char;
     }

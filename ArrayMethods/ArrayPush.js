@@ -1,27 +1,37 @@
+// push() – Add to end of array
 
-function addElementAtLast (fruits) {
-  let index = 0;
-  while (fruits[index] !== undefined) {
-    index++;
+function arrayLength(arr) {
+  let count = 0;
+
+  for (const i of arr) {
+    count++;
   }
-
-  fruits[index] = "Kiwi";
-
-  console.log(fruits);
-  
+  return count;
 }
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-addElementAtLast(fruits); // Output: ["Banana", "Orange", "Apple", "Mango", "Kiwi"]
+
+// function arrayPushMethod(arr, newNum) {
+  
+//   let length = arrayLength(arr);
+//   arr[length] = newNum;
+  
+// }
+
+// let numbers = [1, 2, 3, 4, 5];
+// let newNumber = 6
+// arrayPushMethod(numbers, newNumber);
+
+// console.log("Array after push:", numbers);
 
 
 
+//   ********************************    //
 
-
-// or
-
-const freshFruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
-
-freshFruits[freshFruits !== undefined] = 'Papaya';
-
-console.log(freshFruits);
+function arrayPush(arr, value) {
+  arr[arrayLength(arr)] = value;
+  console.log(arr);
+  
+}
+let arr = [1, 2, 3, 4];
+let value = 5
+arrayPush(arr, value)

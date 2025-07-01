@@ -1,17 +1,56 @@
 // Write a js program to copy one string to another string.
 
-function copyString(str) {
-  let copidString = "";
-  for (let i = 0; str[i] !== undefined; i++) {
-    copidString += str[i];
-    
+function calculateLength(str) {
+  let length = 0;
+  for (const i in str) {
+    length++;
   }
-  console.log('Copied String:', copidString);
-  console.log('Original String:', str);
-  
+
+  return length;
 }
-copyString("Hello, World!");
 
-const string = "jiohc chane"
+// function copyString(str) {
+//   let copidString = "";
+//   for (let i = 0; i < calculateLength(str); i++) {
+//     copidString += str[i];
+    
+//   }
+//   console.log('Copied String:', copidString);
+//   console.log('Original String:', str);
+  
+// }
 
-const string3 = string;
+// const newStr = "Hello Shivam";
+// copyString(newStr);
+
+
+//     *****************************     //
+
+// let str1 = "Shivam Singh";
+// let str2 = "";
+
+// let i = 0;
+// while (i < calculateLength(str)) {
+//   str2 += str1[i];
+//   i++;
+// }
+// console.log(str2);
+// console.log(str1);
+
+
+//     *****************************     //
+
+function copyString2(str) {
+  let copidString = '';
+
+  for (let i = 0; i < calculateLength(str); i++) {
+    copidString += str[i];
+  }
+  return copidString;
+}
+
+let str = "Hello Shivam Singh";
+const result = copyString2(str);
+console.log(result);
+console.log(str);
+

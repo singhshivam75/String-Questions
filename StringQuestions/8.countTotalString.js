@@ -7,7 +7,8 @@ function countTotalString(str) {
 
   for (let i = 0; str[i] !== undefined; i++) {
     let totalStr = str[i];
-    
+    // console.log(totalStr);
+
     if (totalStr >= 'a' && totalStr <= 'z' || totalStr >= 'A' && totalStr <= 'Z') {
       totalAlphabets++;
       // console.log(totalAlphabets);
@@ -24,14 +25,14 @@ function countTotalString(str) {
     Total Numbers: ${totalDigits}
     Total Special Character: ${totalSpecialCharacter}
     `);
-  
+
 }
 let str = "Hello World! 12345 @#$%";
 countTotalString(str);
 
 
 
-
+//     *****************************     //
 
 // function countTotalString(str) {
 //   let totalAlphabets = "";
@@ -46,7 +47,7 @@ countTotalString(str);
 //     if (charCode >= 65 && charCode <= 90 || charCode >= 90 && charCode <= 122) {
 //       totalAlphabets++;
 //       // console.log(totalAlphabets);
-      
+
 //     } else if (charCode >= 48 && charCode <= 57) {
 //       totalDigits++;
 
@@ -57,11 +58,13 @@ countTotalString(str);
 //       charCode >= 123 && charCode <= 126
 //     ) {
 //       totalSpecialCharacter++;
+
 //     } else {
 //       Others++;
+
 //     }
 //   }
-// console.log(`Total Alphabets: ${totalAlphabets}
+//   console.log(`Total Alphabets: ${totalAlphabets}
 // Total Digits: ${totalDigits}
 // Total Special Characters: ${totalSpecialCharacter}
 // Others: ${Others}`);

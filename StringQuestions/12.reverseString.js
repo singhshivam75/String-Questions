@@ -1,4 +1,4 @@
-// Write a C program to find reverse of a string.
+// Write a js program to find reverse of a string.
 
 
 function reverseString(str) {
@@ -16,6 +16,9 @@ function reverseString(str) {
 reverseString("Hello, World!");
 
 
+
+//     *****************************     //
+
 // function reverseString(str) {
 //   let reversedString = "";
 
@@ -26,3 +29,20 @@ reverseString("Hello, World!");
   
 // }
 // reverseString("Hello, World!");
+
+
+
+//     *****************************     //
+
+// function reverseString2(str) {
+//   let reversed = "";
+//   let i = str.length - 1;
+//   while (i >= 0) {
+//     reversed = reversed + str[i];
+//     i--;
+//   }
+//   console.log("Reversed:", reversed);
+// }
+
+// let str = "Hello Shivam!";
+// reverseString2(str);
